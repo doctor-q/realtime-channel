@@ -106,4 +106,9 @@ public class KafkaQueue<T> extends Queue<T> {
             }
         }
     }
+
+    @Override
+    public String name() {
+        return "kafka";
+    }
 }

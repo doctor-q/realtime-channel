@@ -14,6 +14,11 @@ public class ParallelTrigger extends Trigger {
     private ExecutorService executorService;
 
     @Override
+    public String name() {
+        return "parallel";
+    }
+
+    @Override
     public void processData(Event event) {
         if (executorService == null) {
             executorService = Executors.newFixedThreadPool(triggers.size());

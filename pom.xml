@@ -12,6 +12,8 @@
         <module>core</module>
         <module>reader-canal</module>
         <module>queue-kafka</module>
+        <module>elasticsearch-trigger</module>
+        <module>springboot-ui</module>
     </modules>
 
     <properties>

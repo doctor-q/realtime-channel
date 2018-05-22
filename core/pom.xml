@@ -11,23 +11,6 @@
 
     <artifactId>core</artifactId>
 
-    <properties>
-        <slf4j.version>1.7.25</slf4j.version>
-        <logback.version>1.2.3</logback.version>
-        <junit.version>4.12</junit.version>
-        <mockito.version>2.13.0</mockito.version>
-        <fastjson.version>1.2.44</fastjson.version>
-        <guava.version>23.6-jre</guava.version>
-        <mybatis.spring.boot>1.2.0</mybatis.spring.boot>
-        <lombok.version>1.16.20</lombok.version>
-        <mybatis.version>3.4.5</mybatis.version>
-        <mysql.connector.version>6.0.6</mysql.connector.version>
-        <hikari.version>2.7.6</hikari.version>
-        <kafka.version>0.10.2.1</kafka.version>
-        <protobuf.version>3.5.1</protobuf.version>
-        <grpc.version>1.11.0</grpc.version>
-    </properties>
-
     <dependencies>
         <!--log-->
         <dependency>

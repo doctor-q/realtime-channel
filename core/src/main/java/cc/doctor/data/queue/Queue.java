@@ -1,12 +1,14 @@
 package cc.doctor.data.queue;
 
+import cc.doctor.data.Named;
+
 import java.util.Collection;
 import java.util.List;
 
 /**
  * Created by doctor on 17-8-31.
  */
-public abstract class Queue<T> {
+public abstract class Queue<T> implements Named {
     /**
      * push data
      */

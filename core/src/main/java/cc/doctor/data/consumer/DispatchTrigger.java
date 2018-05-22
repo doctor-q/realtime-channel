@@ -25,6 +25,11 @@ public class DispatchTrigger extends Trigger {
     }
 
     @Override
+    public String name() {
+        return "dispatch";
+    }
+
+    @Override
     public void processData(Event event) {
         String dispatchKey = ((DispatchEvent)event).dispatchKey();
         Trigger trigger = triggerMap.get(dispatchKey);

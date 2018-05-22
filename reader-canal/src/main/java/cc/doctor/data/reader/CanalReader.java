@@ -49,7 +49,7 @@ public class CanalReader implements Reader<CanalReaderConfig> {
 
     @Override
     public String name() {
-        return null;
+        return "canal";
     }
 
     @Override

@@ -27,7 +27,7 @@ public class Consumer implements Component {
 
     @Override
     public String name() {
-        return null;
+        return "consumer";
     }
 
     @Override

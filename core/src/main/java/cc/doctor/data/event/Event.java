@@ -1,5 +1,7 @@
 package cc.doctor.data.event;
 
-public interface Event extends Cloneable {
+import java.io.Serializable;
+
+public interface Event extends Cloneable, Serializable {
     Event clone();
 }

@@ -48,4 +48,9 @@ public class MemoryBlockQueue<T> extends Queue<T> {
     public String type() {
         return "memory";
     }
+
+    @Override
+    public String name() {
+        return "memory";
+    }
 }
