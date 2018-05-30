@@ -8,7 +8,9 @@ import org.slf4j.LoggerFactory;
  * Created by doctor on 17-9-1.
  */
 public class LogTrigger extends Trigger {
-    public static final Logger log = LoggerFactory.getLogger(LogTrigger.class);
+    private Class logClass;
+    private String logName;
+    private Logger log;
 
     @Override
     public String name() {
@@ -17,6 +19,19 @@ public class LogTrigger extends Trigger {
 
     @Override
     public void processData(Event event) {
-        log.info(event.toString());
+        getLogger().info(event.toString());
+    }
+
+    public Logger getLogger() {
+        if (log == null) {
+            if (logClass != null) {
+                log = LoggerFactory.getLogger(logClass);
+            } else if (logName != null) {
+                log = LoggerFactory.getLogger(logName);
+            } else {
+                log = LoggerFactory.getLogger(LogTrigger.class);
+            }
+        }
+        return log;
     }
 }
